@@ -10,7 +10,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace BeSimple\SoapClient;
+namespace ppadevs\SoapClient;
 
 /**
  * cURL wrapper class for doing HTTP requests that uses the soap class options.
@@ -24,7 +24,7 @@ class Curl
      *
      * @var string
      */
-    const USER_AGENT = 'PHP-SOAP/\BeSimple\SoapClient';
+    const USER_AGENT = 'PHP-SOAP/\ppadevs\SoapClient';
 
     /**
      * Curl resource.

@@ -10,16 +10,16 @@
  * with this source code in the file LICENSE.
  */
 
-namespace BeSimple\SoapClient;
+namespace ppadevs\SoapClient;
 
-use BeSimple\SoapCommon\Helper;
-use BeSimple\SoapCommon\Mime\MultiPart as MimeMultiPart;
-use BeSimple\SoapCommon\Mime\Parser as MimeParser;
-use BeSimple\SoapCommon\Mime\Part as MimePart;
-use BeSimple\SoapCommon\SoapRequest;
-use BeSimple\SoapCommon\SoapRequestFilter;
-use BeSimple\SoapCommon\SoapResponse;
-use BeSimple\SoapCommon\SoapResponseFilter;
+use ppadevs\SoapCommon\Helper;
+use ppadevs\SoapCommon\Mime\MultiPart as MimeMultiPart;
+use ppadevs\SoapCommon\Mime\Parser as MimeParser;
+use ppadevs\SoapCommon\Mime\Part as MimePart;
+use ppadevs\SoapCommon\SoapRequest;
+use ppadevs\SoapCommon\SoapRequestFilter;
+use ppadevs\SoapCommon\SoapResponse;
+use ppadevs\SoapCommon\SoapResponseFilter;
 
 /**
  * MIME filter.
@@ -56,7 +56,7 @@ class MimeFilter implements SoapRequestFilter, SoapResponseFilter
     /**
      * Modify the given request XML.
      *
-     * @param \BeSimple\SoapCommon\SoapRequest $request SOAP request
+     * @param \ppadevs\SoapCommon\SoapRequest $request SOAP request
      *
      * @return void
      */
@@ -99,7 +99,7 @@ class MimeFilter implements SoapRequestFilter, SoapResponseFilter
     /**
      * Modify the given response XML.
      *
-     * @param \BeSimple\SoapCommon\SoapResponse $response SOAP response
+     * @param \ppadevs\SoapCommon\SoapResponse $response SOAP response
      *
      * @return void
      */

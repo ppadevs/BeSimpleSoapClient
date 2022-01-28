@@ -10,10 +10,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace BeSimple\SoapClient;
+namespace ppadevs\SoapClient;
 
-use BeSimple\SoapCommon\Cache;
-use BeSimple\SoapCommon\Helper;
+use ppadevs\SoapCommon\Cache;
+use ppadevs\SoapCommon\Helper;
 
 /**
  * Downloads WSDL files with cURL. Uses the WSDL_CACHE_* constants and the
@@ -63,7 +63,7 @@ class WsdlDownloader
     /**
      * Constructor.
      *
-     * @param \BeSimple\SoapClient\Curl $curl                  Curl instance
+     * @param \ppadevs\SoapClient\Curl $curl                  Curl instance
      * @param boolean                   $resolveRemoteIncludes WSDL/XSD include enabled?
      * @param boolean                   $cacheWsdl             Cache constant
      */

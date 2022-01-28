@@ -10,9 +10,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace BeSimple\SoapClient;
+namespace ppadevs\SoapClient;
 
-use BeSimple\SoapCommon\SoapResponse as CommonSoapResponse;
+use ppadevs\SoapCommon\SoapResponse as CommonSoapResponse;
 
 /**
  * SoapResponse class for SoapClient. Provides factory function for response object.
@@ -30,7 +30,7 @@ class SoapResponse extends CommonSoapResponse
      * @param string $version     SOAP version
      * @param string $contentType Content type header
      *
-     * @return BeSimple\SoapClient\SoapResponse
+     * @return ppadevs\SoapClient\SoapResponse
      */
     public static function create($content, $location, $action, $version, $contentType)
     {

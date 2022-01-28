@@ -10,10 +10,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace BeSimple\SoapClient;
+namespace ppadevs\SoapClient;
 
-use BeSimple\SoapCommon\SoapRequest as CommonSoapRequest;
-use BeSimple\SoapCommon\SoapMessage;
+use ppadevs\SoapCommon\SoapRequest as CommonSoapRequest;
+use ppadevs\SoapCommon\SoapMessage;
 
 /**
  * SoapRequest class for SoapClient. Provides factory function for request object.
@@ -30,7 +30,7 @@ class SoapRequest extends CommonSoapRequest
      * @param string $action   SOAP action
      * @param string $version  SOAP version
      *
-     * @return BeSimple\SoapClient\SoapRequest
+     * @return ppadevs\SoapClient\SoapRequest
      */
     public static function create($content, $location, $action, $version)
     {

@@ -10,12 +10,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace BeSimple\SoapClient;
+namespace ppadevs\SoapClient;
 
-use BeSimple\SoapCommon\FilterHelper;
-use BeSimple\SoapCommon\Helper;
-use BeSimple\SoapCommon\SoapRequest;
-use BeSimple\SoapCommon\SoapRequestFilter;
+use ppadevs\SoapCommon\FilterHelper;
+use ppadevs\SoapCommon\Helper;
+use ppadevs\SoapCommon\SoapRequest;
+use ppadevs\SoapCommon\SoapRequestFilter;
 
 /**
  * XML MIME filter that fixes the namespace of xmime:contentType attribute.
@@ -34,7 +34,7 @@ class XmlMimeFilter implements SoapRequestFilter
     /**
      * Modify the given request XML.
      *
-     * @param \BeSimple\SoapCommon\SoapRequest $request SOAP request
+     * @param \ppadevs\SoapCommon\SoapRequest $request SOAP request
      *
      * @return void
      */

@@ -10,10 +10,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace BeSimple\SoapClient;
+namespace ppadevs\SoapClient;
 
-use BeSimple\SoapCommon\AbstractSoapBuilder;
-use BeSimple\SoapCommon\Helper;
+use ppadevs\SoapCommon\AbstractSoapBuilder;
+use ppadevs\SoapCommon\Helper;
 
 /**
  * Fluent interface builder for SoapClient instance.
@@ -33,7 +33,7 @@ class SoapClientBuilder extends AbstractSoapBuilder
     /**
      * Create new instance with default options.
      *
-     * @return \BeSimple\SoapClient\SoapClientBuilder
+     * @return \ppadevs\SoapClient\SoapClientBuilder
      */
     public static function createWithDefaults()
     {
@@ -44,7 +44,7 @@ class SoapClientBuilder extends AbstractSoapBuilder
     /**
      * Finally returns a SoapClient instance.
      *
-     * @return \BeSimple\SoapClient\SoapClient
+     * @return \ppadevs\SoapClient\SoapClient
      */
     public function build()
     {
@@ -68,7 +68,7 @@ class SoapClientBuilder extends AbstractSoapBuilder
      *
      * @param boolean $trace Enable/Disable
      *
-     * @return \BeSimple\SoapClient\SoapClientBuilder
+     * @return \ppadevs\SoapClient\SoapClientBuilder
      */
     public function withTrace($trace = true)
     {
@@ -82,7 +82,7 @@ class SoapClientBuilder extends AbstractSoapBuilder
      *
      * @param boolean $exceptions Enable/Disable
      *
-     * @return \BeSimple\SoapClient\SoapClientBuilder
+     * @return \ppadevs\SoapClient\SoapClientBuilder
      */
     public function withExceptions($exceptions = true)
     {
@@ -96,7 +96,7 @@ class SoapClientBuilder extends AbstractSoapBuilder
      *
      * @param string $userAgent User agent string
      *
-     * @return \BeSimple\SoapClient\SoapClientBuilder
+     * @return \ppadevs\SoapClient\SoapClientBuilder
      */
     public function withUserAgent($userAgent)
     {
@@ -108,7 +108,7 @@ class SoapClientBuilder extends AbstractSoapBuilder
     /**
      * Enable gzip compression.
      *
-     * @return \BeSimple\SoapClient\SoapClientBuilder
+     * @return \ppadevs\SoapClient\SoapClientBuilder
      */
     public function withCompressionGzip()
     {
@@ -120,7 +120,7 @@ class SoapClientBuilder extends AbstractSoapBuilder
     /**
      * Enable deflate compression.
      *
-     * @return \BeSimple\SoapClient\SoapClientBuilder
+     * @return \ppadevs\SoapClient\SoapClientBuilder
      */
     public function withCompressionDeflate()
     {
@@ -135,7 +135,7 @@ class SoapClientBuilder extends AbstractSoapBuilder
      * @param string $username Username
      * @param string $password Password
      *
-     * @return \BeSimple\SoapClient\SoapClientBuilder
+     * @return \ppadevs\SoapClient\SoapClientBuilder
      */
     public function withBasicAuthentication($username, $password)
     {
@@ -154,7 +154,7 @@ class SoapClientBuilder extends AbstractSoapBuilder
      * @param string $certificate Certificate
      * @param string $passphrase  Passphrase
      *
-     * @return \BeSimple\SoapClient\SoapClientBuilder
+     * @return \ppadevs\SoapClient\SoapClientBuilder
      */
     public function withDigestAuthentication($certificate, $passphrase = null)
     {
@@ -179,7 +179,7 @@ class SoapClientBuilder extends AbstractSoapBuilder
      * @param string $password Password
      * @param int    $auth     Authentication method
      *
-     * @return \BeSimple\SoapClient\SoapClientBuilder
+     * @return \ppadevs\SoapClient\SoapClientBuilder
      */
     public function withProxy($host, $port, $login = null, $password = null, $auth = null)
     {
@@ -205,7 +205,7 @@ class SoapClientBuilder extends AbstractSoapBuilder
     /**
     * SOAP attachment type Base64.
     *
-    * @return \BeSimple\SoapServer\SoapServerBuilder
+    * @return \ppadevs\SoapServer\SoapServerBuilder
     */
     public function withBase64Attachments()
     {
@@ -217,7 +217,7 @@ class SoapClientBuilder extends AbstractSoapBuilder
     /**
      * SOAP attachment type SwA.
      *
-     * @return \BeSimple\SoapServer\SoapServerBuilder
+     * @return \ppadevs\SoapServer\SoapServerBuilder
      */
     public function withSwaAttachments()
     {
@@ -229,7 +229,7 @@ class SoapClientBuilder extends AbstractSoapBuilder
     /**
      * SOAP attachment type MTOM.
      *
-     * @return \BeSimple\SoapServer\SoapServerBuilder
+     * @return \ppadevs\SoapServer\SoapServerBuilder
      */
     public function withMtomAttachments()
     {

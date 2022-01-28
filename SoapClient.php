@@ -10,12 +10,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace BeSimple\SoapClient;
+namespace ppadevs\SoapClient;
 
-use BeSimple\SoapCommon\Helper;
-use BeSimple\SoapCommon\Converter\MtomTypeConverter;
-use BeSimple\SoapCommon\Converter\SwaTypeConverter;
-use BeSimple\SoapCommon\SoapMessage;
+use ppadevs\SoapCommon\Helper;
+use ppadevs\SoapCommon\Converter\MtomTypeConverter;
+use ppadevs\SoapCommon\Converter\SwaTypeConverter;
+use ppadevs\SoapCommon\SoapMessage;
 
 /**
  * Extended SoapClient that uses a a cURL wrapper for all underlying HTTP
@@ -44,7 +44,7 @@ class SoapClient extends \SoapClient
     /**
      * cURL instance.
      *
-     * @var \BeSimple\SoapClient\Curl
+     * @var \ppadevs\SoapClient\Curl
      */
     protected $curl = null;
 
@@ -79,7 +79,7 @@ class SoapClient extends \SoapClient
     /**
      * Soap kernel.
      *
-     * @var \BeSimple\SoapClient\SoapKernel
+     * @var \ppadevs\SoapClient\SoapKernel
      */
     protected $soapKernel = null;
 
@@ -301,7 +301,7 @@ class SoapClient extends \SoapClient
     /**
      * Get SoapKernel instance.
      *
-     * @return \BeSimple\SoapClient\SoapKernel
+     * @return \ppadevs\SoapClient\SoapKernel
      */
     public function getSoapKernel()
     {

@@ -11,11 +11,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace BeSimple\SoapClient;
+namespace ppadevs\SoapClient;
 
-use BeSimple\SoapCommon\SoapKernel as CommonSoapKernel;
-use BeSimple\SoapCommon\SoapRequest as CommonSoapRequest;
-use BeSimple\SoapCommon\SoapResponse as CommonSoapResponse;
+use ppadevs\SoapCommon\SoapKernel as CommonSoapKernel;
+use ppadevs\SoapCommon\SoapRequest as CommonSoapRequest;
+use ppadevs\SoapCommon\SoapResponse as CommonSoapResponse;
 
 /**
  * SoapKernel for Client.

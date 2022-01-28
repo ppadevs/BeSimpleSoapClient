@@ -10,17 +10,17 @@
  * with this source code in the file LICENSE.
  */
 
-namespace BeSimple\SoapClient;
+namespace ppadevs\SoapClient;
 
 use ass\XmlSecurity\DSig as XmlSecurityDSig;
 use ass\XmlSecurity\Enc as XmlSecurityEnc;
-use BeSimple\SoapCommon\FilterHelper;
-use BeSimple\SoapCommon\Helper;
-use BeSimple\SoapCommon\SoapRequest as CommonSoapRequest;
-use BeSimple\SoapCommon\SoapRequestFilter;
-use BeSimple\SoapCommon\SoapResponse as CommonSoapResponse;
-use BeSimple\SoapCommon\SoapResponseFilter;
-use BeSimple\SoapCommon\WsSecurityFilterClientServer;
+use ppadevs\SoapCommon\FilterHelper;
+use ppadevs\SoapCommon\Helper;
+use ppadevs\SoapCommon\SoapRequest as CommonSoapRequest;
+use ppadevs\SoapCommon\SoapRequestFilter;
+use ppadevs\SoapCommon\SoapResponse as CommonSoapResponse;
+use ppadevs\SoapCommon\SoapResponseFilter;
+use ppadevs\SoapCommon\WsSecurityFilterClientServer;
 
 /**
  * This plugin implements a subset of the following standards:
@@ -69,7 +69,7 @@ class WsSecurityFilter extends WsSecurityFilterClientServer implements SoapReque
     /**
      * User WsSecurityKey.
      *
-     * @var \BeSimple\SoapCommon\WsSecurityKey
+     * @var \ppadevs\SoapCommon\WsSecurityKey
      */
     protected $userSecurityKey;
 
@@ -103,7 +103,7 @@ class WsSecurityFilter extends WsSecurityFilterClientServer implements SoapReque
     /**
      * Modify the given request XML.
      *
-     * @param \BeSimple\SoapCommon\SoapRequest $request SOAP request
+     * @param \ppadevs\SoapCommon\SoapRequest $request SOAP request
      *
      * @return void
      */
@@ -225,7 +225,7 @@ class WsSecurityFilter extends WsSecurityFilterClientServer implements SoapReque
     /**
      * Modify the given request XML.
      *
-     * @param \BeSimple\SoapCommon\SoapResponse $response SOAP response
+     * @param \ppadevs\SoapCommon\SoapResponse $response SOAP response
      *
      * @return void
      */

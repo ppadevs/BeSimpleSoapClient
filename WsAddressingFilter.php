@@ -10,14 +10,14 @@
  * with this source code in the file LICENSE.
  */
 
-namespace BeSimple\SoapClient;
+namespace ppadevs\SoapClient;
 
-use BeSimple\SoapCommon\FilterHelper;
-use BeSimple\SoapCommon\Helper;
-use BeSimple\SoapCommon\SoapRequest as CommonSoapRequest;
-use BeSimple\SoapCommon\SoapRequestFilter;
-use BeSimple\SoapCommon\SoapResponse as CommonSoapResponse;
-use BeSimple\SoapCommon\SoapResponseFilter;
+use ppadevs\SoapCommon\FilterHelper;
+use ppadevs\SoapCommon\Helper;
+use ppadevs\SoapCommon\SoapRequest as CommonSoapRequest;
+use ppadevs\SoapCommon\SoapRequestFilter;
+use ppadevs\SoapCommon\SoapResponse as CommonSoapResponse;
+use ppadevs\SoapCommon\SoapResponseFilter;
 
 /**
  * This plugin implements a subset of the following standards:
@@ -255,7 +255,7 @@ class WsAddressingFilter implements SoapRequestFilter, SoapResponseFilter
     /**
      * Modify the given request XML.
      *
-     * @param \BeSimple\SoapCommon\SoapRequest $request SOAP request
+     * @param \ppadevs\SoapCommon\SoapRequest $request SOAP request
      *
      * @return void
      */
@@ -324,7 +324,7 @@ class WsAddressingFilter implements SoapRequestFilter, SoapResponseFilter
     /**
      * Modify the given response XML.
      *
-     * @param \BeSimple\SoapCommon\SoapResponse $response SOAP response
+     * @param \ppadevs\SoapCommon\SoapResponse $response SOAP response
      *
      * @return void
      */
