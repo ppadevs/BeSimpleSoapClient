@@ -14,7 +14,7 @@
         "php": ">=7.4.0",
         "ext-soap": "*",
         "ext-curl": "*",
-        "ppadevs/soap-common": "~1.0",
+        "ppadevs/soap-common": "^1.0",
         "ass/xmlsecurity": "~1.0"
     },
     "require-dev": {
