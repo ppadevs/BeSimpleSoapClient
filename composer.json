@@ -8,7 +8,7 @@
     "authors": [
         {
             "name": "ppadevs"
-        },
+        }
     ],
     "require": {
         "php": ">=7.4.0",
